@@ -4,47 +4,6 @@
     text-align: center;
   }
 }
-
-.heading {
-  margin-top: 250px;
-  text-align: center;
-  color: #cddba4;
-  font-family: "Montserrat", sans-serif;
-}
-h1 {
-  font-size: 90px;
-  font-weight: 800;
-}
-h2 {
-  font-size: 50px;
-  font-weight: 800;
-}
-
-.nav-link {
-  color: #f4f5f3;
-}
-.nav-link:hover {
-  color: rgb(110, 131, 137);
-}
-footer {
-  display: flex;
-  justify-content: center;
-  margin-top: 300px;
-  border-top: 1px solid #f4f5f3;
-}
-i {
-  margin-top: 20px;
-  padding: 15px 15px 15px 15px;
-  color: #f4f5f3;
-  transition: color 0.5s;
-}
-
-i:hover {
-  color: rgb(30, 62, 71);
-}
-.intro {
-  margin: 100px 20px 0px 20px;
-}
 @keyframes move-background {
   from {
     -webkit-transform: translate3d(0px, 0px, 0px);
@@ -79,7 +38,16 @@ i:hover {
     -webkit-transform: translate3d(1000px, 0px, 0px);
   }
 }
-
+.heading,
+h1,
+h2,
+.nav-link,
+footer,
+i,
+.intro {
+  position: relative;
+  z-index: 10;
+}
 .background-container {
   position: fixed;
   top: 0;
@@ -91,6 +59,7 @@ i:hover {
     rgb(102, 146, 177),
     rgb(193, 219, 232)
   );
+  z-index: 1;
 }
 .clouds {
   width: 4000px;
@@ -101,11 +70,56 @@ i:hover {
   position: absolute;
   top: 0;
   bottom: 0;
-  z-index: 3;
+  z-index: 0;
   opacity: 0.5;
   -moz-animation: move-background 150s linear infinite;
   -ms-animation: move-background 150s linear infinite;
   -o-animation: move-background 150s linear infinite;
   -webkit-animation: move-background 150s linear infinite;
   animation: move-background 150s linear infinite;
+}
+
+.heading {
+  margin-top: 350px;
+  margin-bottom: 350px;
+  text-align: center;
+  color: #d0dfa1;
+  font-family: "Gravitas One", serif;
+}
+h1 {
+  font-size: 70px;
+  font-weight: 700;
+}
+h2 {
+  font-size: 40px;
+  font-weight: 800;
+}
+.nav-link {
+  color: #edf1f3;
+  font-family: "Cutive Mono", monospace;
+}
+.nav-link:hover {
+  color: #274a68;
+}
+footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  border-top: 1px solid #edf1f3;
+  flex: 1;
+}
+
+i {
+  margin-top: 20px;
+  padding: 15px;
+  color: #edf1f3;
+}
+i:hover {
+  color: #274a68;
+}
+
+.intro {
+  margin: 100px 20px 0px 20px;
 }
