@@ -1,7 +1,14 @@
+@media (max-width: 900px) {
+  h1 {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
 .heading {
-  margin-top: 200px;
+  margin-top: 250px;
   text-align: center;
-  color: #224931;
+  color: #cddba4;
   font-family: "Montserrat", sans-serif;
 }
 h1 {
@@ -14,26 +21,91 @@ h2 {
 }
 
 .nav-link {
-  color: #224931;
+  color: #f4f5f3;
 }
-:hover.nav-link {
+.nav-link:hover {
   color: rgb(110, 131, 137);
 }
 footer {
   display: flex;
   justify-content: center;
-  margin-top: 200px;
-  border-top: 1px solid #224931;
+  margin-top: 300px;
+  border-top: 1px solid #f4f5f3;
 }
 i {
   margin-top: 20px;
   padding: 15px 15px 15px 15px;
-  color: #224931;
-  transition: width 2s linear 1s;
+  color: #f4f5f3;
+  transition: color 0.5s;
 }
+
 i:hover {
-  color: rgb(110, 131, 137);
+  color: rgb(30, 62, 71);
 }
 .intro {
   margin: 100px 20px 0px 20px;
+}
+@keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+@-webkit-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+
+@-moz-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+
+@-webkit-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(102, 146, 177),
+    rgb(193, 219, 232)
+  );
+}
+.clouds {
+  width: 4000px;
+  height: 100%;
+  background: transparent
+    url("file:///Users/DandA/Downloads/clouds-png-13370.png") no-repeat;
+  background-size: 1700px 1000px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 3;
+  opacity: 0.5;
+  -moz-animation: move-background 150s linear infinite;
+  -ms-animation: move-background 150s linear infinite;
+  -o-animation: move-background 150s linear infinite;
+  -webkit-animation: move-background 150s linear infinite;
+  animation: move-background 150s linear infinite;
 }
