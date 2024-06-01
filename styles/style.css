@@ -1,7 +1,15 @@
 @media (max-width: 900px) {
+  .heading {
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+
   h1 {
-    font-size: 18px;
-    text-align: center;
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 20px;
   }
 }
 @keyframes move-background {
@@ -48,19 +56,26 @@ i,
   position: relative;
   z-index: 10;
 }
-.background-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+body {
+  font-family: "Cutive Mono", monospace;
+  height: 1000px;
+  background-color: rgb(102, 146, 177);
   background-image: linear-gradient(
     to bottom right,
     rgb(102, 146, 177),
     rgb(193, 219, 232)
   );
+  overflow-x: hidden;
+}
+.background-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   z-index: 1;
 }
+
 .clouds {
   width: 4000px;
   height: 100%;
@@ -70,15 +85,10 @@ i,
   position: absolute;
   top: 0;
   bottom: 0;
-  z-index: 0;
+  z-index: -1;
   opacity: 0.5;
-  -moz-animation: move-background 150s linear infinite;
-  -ms-animation: move-background 150s linear infinite;
-  -o-animation: move-background 150s linear infinite;
-  -webkit-animation: move-background 150s linear infinite;
   animation: move-background 150s linear infinite;
 }
-
 .heading {
   margin-top: 350px;
   margin-bottom: 350px;
