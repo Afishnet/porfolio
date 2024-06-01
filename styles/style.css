@@ -58,7 +58,7 @@ i,
 }
 body {
   font-family: "Cutive Mono", monospace;
-  height: 1000px;
+  height: 10000px;
   background-color: rgb(102, 146, 177);
   background-image: linear-gradient(
     to bottom right,
@@ -66,6 +66,7 @@ body {
     rgb(193, 219, 232)
   );
   overflow-x: hidden;
+  color: #274a68;
 }
 .background-container {
   position: absolute;
@@ -92,17 +93,20 @@ body {
 .heading {
   margin-top: 350px;
   margin-bottom: 350px;
-  text-align: center;
-  color: #d0dfa1;
-  font-family: "Gravitas One", serif;
 }
 h1 {
+  text-align: center;
   font-size: 70px;
   font-weight: 700;
+  font-family: "Gravitas One", serif;
+  color: #dce9c0;
 }
 h2 {
   font-size: 40px;
   font-weight: 800;
+  text-align: center;
+  font-family: "Gravitas One", serif;
+  color: #dce9c0;
 }
 .nav-link {
   color: #edf1f3;
@@ -132,4 +136,31 @@ i:hover {
 
 .intro {
   margin: 100px 20px 0px 20px;
+}
+.img-profile {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  height: 500px;
+}
+.porfolio-heading {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+h3 {
+  font-size: 28px;
+  font-family: "Gravitas One", serif;
+  text-align: left;
+}
+p {
+  font-size: 20px;
+}
+.about {
+  margin-top: 35px;
+}
+.porfolio-container {
+  margin-bottom: 20px;
+  display: block;
+}
+.work-container {
+  margin-top: 50px;
 }
