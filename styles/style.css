@@ -96,7 +96,7 @@ body {
   position: absolute;
   top: 0;
   bottom: 0;
-  z-index: -1;
+  z-index: 0;
   opacity: 0.5;
   animation: move-background 150s linear infinite;
 }
@@ -174,4 +174,24 @@ p {
 }
 .work-container {
   margin-top: 100px;
+}
+.product-link {
+  border-radius: 4px;
+  padding: 15px;
+  text-decoration: none;
+  background: #d6db7b;
+  box-shadow: var(--box-shadow);
+  color: white;
+  font-size: 20px;
+}
+.work-img {
+  height: 300px;
+  width: auto;
+  transition: all 150ms ease-in-out;
+}
+.work-img:hover {
+  filter: contrast(95%);
+  transform: scale(1.2);
+  border: solid 2px white;
+  border-radius: 40px;
 }
